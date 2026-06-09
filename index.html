@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Yejarla Yaswanth Kumar - AI/ML Engineer Portfolio">
+    <title>Yaswanth Kumar | AI/ML Engineer</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Roboto+Mono:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- 3D Canvas Background -->
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark glass-nav">
+        <div class="container">
+            <a class="navbar-brand font-monospace fw-bold" href="#">YYK.</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#certifications">Achievements</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main data-bs-spy="scroll" data-bs-target="#navbarNav">
+        
+        <!-- Hero Section -->
+        <section id="hero" class="hero d-flex align-items-center justify-content-center min-vh-100 position-relative">
+            <div class="container text-center text-light z-index-1 mt-5">
+                <div class="welcome-animation gsap-reveal mb-4">
+                    <img src="images/man_in_suit.png" alt="Animated Avatar" class="animated-avatar floating-avatar d-block mx-auto">
+                    <div class="welcome-text badge bg-dark border border-secondary text-light rounded-pill mt-3 mb-2">Welcome to my portfolio 👋</div>
+                </div>
+                <h1 class="display-2 fw-bolder mb-3 gsap-reveal">Yejarla Yaswanth Kumar</h1>
+                <h2 class="h3 fw-light mb-4 text-gradient gsap-reveal">AI/ML Engineer</h2>
+                <div class="d-flex justify-content-center gap-3 gsap-reveal">
+                    <a href="https://www.linkedin.com/in/yaswanth-kumar-yejarla-530aa9283/" target="_blank" class="btn btn-outline-light btn-lg rounded-pill social-btn"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                    <a href="https://github.com/yaswanth-kumar546" target="_blank" class="btn btn-outline-light btn-lg rounded-pill social-btn"><i class="fab fa-github"></i> GitHub</a>
+                    <a href="#contact" class="btn btn-primary btn-lg rounded-pill glow-btn">Contact Me</a>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <span>Scroll</span>
+                <i class="fas fa-chevron-down mt-2 d-block"></i>
+            </div>
+        </section>
+
+        <!-- About & Education Section -->
+        <section id="about" class="py-5 text-light section-padding">
+            <div class="container">
+                <div class="row align-items-center gsap-fade-up">
+                    <div class="col-lg-6 mb-4 mb-lg-0">
+                        <div class="glass-card p-5 h-100">
+                            <h2 class="fw-bold mb-4">Profile Summary</h2>
+                            <p class="lead">Passionate AI/ML engineer with expertise in deep learning, computer vision, and natural language processing.</p>
+                            <p>Proficient in Python, TensorFlow, and PyTorch, with strong problem-solving and analytical skills. Seeking opportunities to develop innovative AI-driven solutions.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="glass-card p-5 h-100 border-accent">
+                            <h2 class="fw-bold mb-4">Education</h2>
+                            <div class="education-item">
+                                <h4 class="text-gradient">Bachelor of Technology, Computer Science Engineering</h4>
+                                <h5 class="text-white-50">Dr Paul Raj Engineering College (JNTUK)</h5>
+                                <div class="d-flex justify-content-between text-muted mb-2">
+                                    <span>2022 - 2026</span>
+                                    <span class="badge bg-primary text-white">CGPA: 7.4</span>
+                                </div>
+                                <p class="mb-0"><strong>Coursework:</strong> Operating Systems, DBMS, Computer Networks, AI/ML, Software Engineering.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="py-5 text-light section-padding">
+            <div class="container">
+                <h2 class="display-5 fw-bold mb-5 text-center gsap-fade-up">Work Experience</h2>
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <div class="glass-card p-5 position-relative gsap-fade-up">
+                            <div class="timeline-dot"></div>
+                            <div class="d-flex justify-content-between align-items-center mb-3 flex-wrap">
+                                <h3 class="mb-0">Python Programming Intern</h3>
+                                <span class="text-gradient fw-bold">Dec 2024 - Jan 2025</span>
+                            </div>
+                            <h4 class="text-white-50 mb-4">CODTECH IT SOLUTIONS <a href="https://drive.google.com/file/d/1EfVEXTWu-jrk6ry--z0r9p0gb8uxtRsA/view?usp=drivesdk" target="_blank" class="btn btn-sm btn-outline-info ms-2 rounded-pill"><i class="fas fa-link"></i> Certificate</a></h4>
+                            <ul class="experience-list">
+                                <li>Completed a 2-month internship in Python Programming with focus on automation and NLP based applications.</li>
+                                <li>Applied Python skills to build automation scripts and chatbot functionalities.</li>
+                                <li>Worked with libraries such as NLTK, Pandas and NumPy for data processing and NLP tasks.</li>
+                                <li>Strengthened skills in workflow automation and intelligent system development.</li>
+                            </ul>
+                        </div>
+
+                        <!-- SkillDzire Experience -->
+                        <div class="glass-card p-5 position-relative gsap-fade-up mt-5">
+                            <div class="timeline-dot"></div>
+                            <div class="d-flex justify-content-between align-items-center mb-3 flex-wrap">
+                                <h3 class="mb-0">Python Developer</h3>
+                                <span class="text-gradient fw-bold">Recent</span>
+                            </div>
+                            <h4 class="text-white-50 mb-4">SkillDzire</h4>
+                            <ul class="experience-list">
+                                <li>Built real-time projects and gained extensive hands-on experience in Python development.</li>
+                                <li>Involved in end-to-end project management, project dealing, and meeting requirements.</li>
+                                <li>Gained leadership experience through effective team management and collaboration.</li>
+                            </ul>
+                        </div>
+                        <!-- Tech Content Creator -->
+                        <div class="glass-card p-5 position-relative gsap-fade-up mt-5">
+                            <div class="timeline-dot"></div>
+                            <div class="d-flex justify-content-between align-items-center mb-3 flex-wrap">
+                                <h3 class="mb-0">Tech Content Creator</h3>
+                                <span class="text-gradient fw-bold">Ongoing</span>
+                            </div>
+                            <h4 class="text-white-50 mb-4">Instagram: <a href="https://instagram.com/xmaster_pyhub" target="_blank" class="text-info text-decoration-none">@xmaster_pyhub</a></h4>
+                            <ul class="experience-list">
+                                <li>Started a tech content creation page dedicated to helping students and developers.</li>
+                                <li>Providing free course resources, study materials, and informative picture notes.</li>
+                                <li>Building an engaged community of learners focused on Python, AI/ML, and modern technologies.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="py-5 text-light section-padding">
+            <div class="container">
+                <h2 class="display-5 fw-bold mb-5 text-center gsap-fade-up">Technical Skills</h2>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-4 gsap-fade-up">
+                        <div class="glass-card p-4 h-100 skill-card">
+                            <i class="fas fa-code fa-2x mb-3 text-primary"></i>
+                            <h4>Programming</h4>
+                            <div class="d-flex flex-wrap gap-2 mt-3">
+                                <span class="skill-badge">Python</span>
+                                <span class="skill-badge">SQL</span>
+                                <span class="skill-badge">NumPy</span>
+                                <span class="skill-badge">Pandas</span>
+                                <span class="skill-badge">Seaborn</span>
+                                <span class="skill-badge">C</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 gsap-fade-up">
+                        <div class="glass-card p-4 h-100 skill-card">
+                            <i class="fas fa-brain fa-2x mb-3 text-info"></i>
+                            <h4>Machine Learning & AI</h4>
+                            <p class="small text-muted mt-2">Neural Networks (DNN, CNN, RNN), NLP (text preprocessing, sentiment analysis, feature extraction), Computer Vision (image data handling, feature engineering).</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 gsap-fade-up">
+                        <div class="glass-card p-4 h-100 skill-card">
+                            <i class="fas fa-chart-pie fa-2x mb-3 text-success"></i>
+                            <h4>Data Science</h4>
+                            <div class="d-flex flex-wrap gap-2 mt-3">
+                                <span class="skill-badge">EDA</span>
+                                <span class="skill-badge">Correlation automation</span>
+                                <span class="skill-badge">Feature engineering</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 gsap-fade-up">
+                        <div class="glass-card p-4 h-100 skill-card">
+                            <i class="fas fa-robot fa-2x mb-3 text-warning"></i>
+                            <h4>Automation & Tools</h4>
+                            <div class="d-flex flex-wrap gap-2 mt-3">
+                                <span class="skill-badge">Workflow automation</span>
+                                <span class="skill-badge">Selenium</span>
+                                <span class="skill-badge">GitHub</span>
+                                <span class="skill-badge">MS Office Suite</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-lg-6 gsap-fade-up">
+                        <div class="glass-card p-4 h-100 skill-card">
+                            <i class="fas fa-users fa-2x mb-3 text-danger"></i>
+                            <h4>Soft Skills</h4>
+                            <div class="d-flex flex-wrap gap-2 mt-3">
+                                <span class="skill-badge">Problem-Solving</span>
+                                <span class="skill-badge">Communication</span>
+                                <span class="skill-badge">Teamwork</span>
+                                <span class="skill-badge">Time Management</span>
+                                <span class="skill-badge">Leadership</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-5 text-light section-padding">
+            <div class="container">
+                <h2 class="display-5 fw-bold mb-5 text-center gsap-fade-up">Projects</h2>
+                <div class="row g-5">
+                    <div class="col-lg-6 gsap-fade-up">
+                        <div class="glass-card project-card h-100">
+                            <div class="p-5">
+                                <div class="badge bg-primary mb-3">Final Year Project</div>
+                                <h3 class="fw-bold mb-3">Mental Wellness Prediction using AI</h3>
+                                <p class="text-white-50">Identifying potential mental wellness issues in youth based on social media usage patterns.</p>
+                                <ul class="project-list text-muted mt-4">
+                                    <li>Applied Convolutional Neural Networks (CNN), Recurrent Neural Networks (RNN), and LSTM for advanced pattern recognition.</li>
+                                    <li>Designed real-time conversational system to provide emotional support.</li>
+                                    <li>Integrated NLP for text preprocessing, sentiment analysis, and behavioral feature extraction.</li>
+                                </ul>
+                                <div class="mt-4 pt-3 border-top border-secondary">
+                                    <span class="badge bg-primary text-light me-1"><i class="fas fa-thumbtack"></i> CNN</span>
+                                    <span class="badge bg-primary text-light me-1"><i class="fas fa-thumbtack"></i> RNN</span>
+                                    <span class="badge bg-primary text-light me-1"><i class="fas fa-thumbtack"></i> LSTM</span>
+                                    <span class="badge bg-dark border border-secondary text-light me-1">NLP</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 gsap-fade-up">
+                        <div class="glass-card project-card h-100">
+                            <div class="p-5">
+                                <div class="badge bg-info mb-3">Minor Project</div>
+                                <h3 class="fw-bold mb-3">Wine Quality EDA</h3>
+                                <p class="text-white-50">Exploratory Data Analysis on the Wine Quality dataset to understand data structure and key features.</p>
+                                <ul class="project-list text-muted mt-4">
+                                    <li>Performed data cleaning, missing value handling, and consistency checks.</li>
+                                    <li>Created insightful visualizations using Seaborn and Matplotlib (histograms, pairplots).</li>
+                                    <li>Explored feature relationships using Python (Pandas, NumPy).</li>
+                                </ul>
+                                <div class="mt-4 pt-3 border-top border-secondary">
+                                    <span class="badge bg-dark border border-secondary text-light me-1">Pandas</span>
+                                    <span class="badge bg-dark border border-secondary text-light me-1">Seaborn</span>
+                                    <span class="badge bg-dark border border-secondary text-light me-1">EDA</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- AI Agent Caller -->
+                    <div class="col-lg-6 gsap-fade-up">
+                        <div class="glass-card project-card h-100">
+                            <div class="p-5">
+                                <div class="badge bg-success mb-3">AI Integration</div>
+                                <h3 class="fw-bold mb-3">AI Agent Caller</h3>
+                                <p class="text-white-50">An automated conversational voice agent capable of handling realistic phone interactions.</p>
+                                <ul class="project-list text-muted mt-4">
+                                    <li>Integrated AI tools like Retell AI to power natural language voice conversations.</li>
+                                    <li>Designed efficient call flows and handled real-time audio interactions.</li>
+                                </ul>
+                                <div class="mt-4 pt-3 border-top border-secondary">
+                                    <span class="badge bg-dark border border-secondary text-light me-1">Retell AI</span>
+                                    <span class="badge bg-dark border border-secondary text-light me-1">Python</span>
+                                    <span class="badge bg-dark border border-secondary text-light me-1">AI Tools</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pygame Project -->
+                    <div class="col-lg-6 gsap-fade-up">
+                        <div class="glass-card project-card h-100">
+                            <div class="p-5">
+                                <div class="badge bg-secondary mb-3">Game Development</div>
+                                <h3 class="fw-bold mb-3">Python Arcade Game</h3>
+                                <p class="text-white-50">A 2D interactive arcade-style game built entirely in Python.</p>
+                                <ul class="project-list text-muted mt-4">
+                                    <li>Utilized the Pygame library to handle graphics, sound, and user input.</li>
+                                    <li>Implemented core game mechanics including collision detection and scoring systems.</li>
+                                </ul>
+                                <div class="mt-4 pt-3 border-top border-secondary">
+                                    <span class="badge bg-dark border border-secondary text-light me-1">Python</span>
+                                    <span class="badge bg-dark border border-secondary text-light me-1">Pygame</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications & Achievements Section -->
+        <section id="certifications" class="py-5 text-light section-padding position-relative">
+            <div class="container">
+                <div class="row g-5">
+                    <div class="col-lg-6 gsap-fade-up">
+                        <h2 class="display-6 fw-bold mb-4">Certifications</h2>
+                        <div class="glass-card p-4">
+                            <ul class="list-unstyled mb-0 cert-list">
+                                <li class="d-flex justify-content-between align-items-center mb-3 pb-3 border-bottom border-secondary">
+                                    <div>
+                                        <h5 class="mb-1"><i class="fas fa-certificate text-warning me-2"></i> Artificial Intelligence</h5>
+                                        <small class="text-white-50">Programming Hub</small>
+                                    </div>
+                                    <span class="badge bg-dark">Mar 2024</span>
+                                </li>
+                                <li class="d-flex justify-content-between align-items-center mb-3 pb-3 border-bottom border-secondary">
+                                    <div>
+                                        <h5 class="mb-1"><i class="fas fa-certificate text-warning me-2"></i> Fundamentals of Computer Science</h5>
+                                        <small class="text-white-50">Programming Hub</small>
+                                    </div>
+                                    <span class="badge bg-dark">Apr 2024</span>
+                                </li>
+                                <li class="d-flex justify-content-between align-items-center mb-3 pb-3 border-bottom border-secondary">
+                                    <div>
+                                        <h5 class="mb-1"><i class="fas fa-certificate text-warning me-2"></i> Python Programming</h5>
+                                        <small class="text-white-50">Guvi</small>
+                                    </div>
+                                    <span class="badge bg-dark">May 2024</span>
+                                </li>
+                                <li class="d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <h5 class="mb-1"><i class="fas fa-trophy text-warning me-2"></i> Pan India Hackathon</h5>
+                                        <small class="text-white-50">Codtech IT Solutions</small>
+                                    </div>
+                                    <span class="badge bg-dark">Mar 2025</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 gsap-fade-up">
+                        <h2 class="display-6 fw-bold mb-4">Achievements</h2>
+                        <div class="glass-card p-4 h-100 d-flex flex-column justify-content-center">
+                            <div class="achievement-item d-flex mb-4">
+                                <div class="me-3 mt-1"><i class="fas fa-star text-primary fa-2x"></i></div>
+                                <div>
+                                    <h5 class="fw-bold text-gradient">Top Performer</h5>
+                                    <p class="text-white-50 small mb-0">Recognized for consistent performance and participation during internship and academic projects.</p>
+                                </div>
+                            </div>
+                            <div class="achievement-item d-flex mb-4">
+                                <div class="me-3 mt-1"><i class="fas fa-chart-line text-success fa-2x"></i></div>
+                                <div>
+                                    <h5 class="fw-bold text-gradient">95.52 Percentile</h5>
+                                    <p class="text-white-50 small mb-0">Naukri Campus Young Turks 2025. Recognized among top performers in a national-level skill competition.</p>
+                                </div>
+                            </div>
+                            <div class="achievement-item d-flex">
+                                <div class="me-3 mt-1"><i class="fas fa-medal text-warning fa-2x"></i></div>
+                                <div>
+                                    <h5 class="fw-bold text-gradient">Ranked 906 Nationwide</h5>
+                                    <p class="text-white-50 small mb-0">Common Internship Test, showcasing high performance among a large pool of candidates.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-5 text-light section-padding mb-5">
+            <div class="container text-center gsap-fade-up">
+                <div class="glass-card p-5 max-w-lg mx-auto" style="max-width: 800px;">
+                    <h2 class="display-5 fw-bold mb-4">Get In Touch</h2>
+                    <p class="lead text-white-50 mb-5">Seeking opportunities to develop innovative AI-driven solutions. Let's connect!</p>
+                    
+                    <div class="row g-4 justify-content-center mb-5">
+                        <div class="col-md-6 col-lg-5">
+                            <a href="mailto:yaswanthkumaryejarla@gmail.com" class="text-decoration-none">
+                                <div class="contact-box p-4 rounded-4 border border-secondary text-light h-100 contact-hover">
+                                    <i class="fas fa-envelope fa-2x mb-3 text-primary"></i>
+                                    <h5>Email</h5>
+                                    <span class="small text-white-50">yaswanthkumaryejarla@gmail.com</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-6 col-lg-5">
+                            <a href="tel:+919701148072" class="text-decoration-none">
+                                <div class="contact-box p-4 rounded-4 border border-secondary text-light h-100 contact-hover">
+                                    <i class="fas fa-phone-alt fa-2x mb-3 text-info"></i>
+                                    <h5>Phone</h5>
+                                    <span class="small text-white-50">+91 9701148072</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <footer class="text-center py-4 text-white-50 border-top border-secondary bg-dark-glass z-index-1 position-relative">
+        <div class="container">
+            <p class="mb-0">&copy; 2026 Yejarla Yaswanth Kumar. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Three.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    
+    <!-- Custom Scripts -->
+    <script src="js/three-scene.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
